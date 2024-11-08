@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/back" />
+
+            <EditText
+                android:id="@+id/editTexttext"
+                android:layout_marginRight="5dp"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableEnd="@drawable/search"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Shearch Workout"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/profile" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background"
+            android:elevation="0dp"
+            android:layout_margin="0dp"
+            android:padding="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonToBackActivity"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_bg"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText"
+                    tools:layout_editor_absoluteX="330dp"
+                    tools:layout_editor_absoluteY="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/front" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/fireAnimAsstLeft"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:clickable="true"
+                    android:visibility="invisible"
+                    app:lottie_colorFilter="@color/orange"
+                    app:lottie_fileName="fire.json"
+                    tools:layout_editor_absoluteX="156dp"
+                    tools:layout_editor_absoluteY="180dp"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/buttonAssLeft"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@color/invisible"
+                    tools:layout_editor_absoluteX="156dp"
+                    tools:layout_editor_absoluteY="180dp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/fireAnimAssRight"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:clickable="true"
+                    android:visibility="invisible"
+                    app:lottie_colorFilter="@color/orange"
+                    app:lottie_fileName="fire.json"
+                    tools:layout_editor_absoluteX="216dp"
+                    tools:layout_editor_absoluteY="180dp"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/buttonAssRight"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@color/invisible"
+                    tools:layout_editor_absoluteX="216dp"
+                    tools:layout_editor_absoluteY="180dp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/fireAnimShouldertLeft"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:rotation="30"
+                    android:visibility="invisible"
+                    app:lottie_colorFilter="@color/orange"
+                    app:lottie_fileName="fire.json"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="180dp"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/buttonShoulderLeft"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/invisible"
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="180dp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/fireAnimBShoulderRight"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:rotation="-30"
+                    android:visibility="invisible"
+                    app:lottie_colorFilter="@color/orange"
+                    app:lottie_fileName="fire.json"
+                    tools:layout_editor_absoluteX="266dp"
+                    tools:layout_editor_absoluteY="180dp"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/buttonShoulderRight"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/invisible"
+                    tools:layout_editor_absoluteX="266dp"
+                    tools:layout_editor_absoluteY="180dp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/fireAnimBicepsLeft"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:rotation="30"
+                    android:visibility="invisible"
+                    app:lottie_colorFilter="@color/orange"
+                    app:lottie_fileName="fire.json"
+                    tools:layout_editor_absoluteX="115dp"
+                    tools:layout_editor_absoluteY="240dp"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/buttonBicepsLeft"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/invisible"
+                    tools:layout_editor_absoluteX="115dp"
+                    tools:layout_editor_absoluteY="240dp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/fireAnimBicepsRight"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:rotation="-30"
+                    android:visibility="invisible"
+                    app:lottie_colorFilter="@color/orange"
+                    app:lottie_fileName="fire.json"
+                    tools:layout_editor_absoluteX="276dp"
+                    tools:layout_editor_absoluteY="240dp"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/buttonBicepsRight"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/invisible"
+                    tools:layout_editor_absoluteX="276dp"
+                    tools:layout_editor_absoluteY="240dp" />
+
+                <FrameLayout
+                    android:id="@+id/fragmentLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    tools:layout_editor_absoluteY="650dp">
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

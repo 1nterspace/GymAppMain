@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GymApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ChestDescriphion">
+        "Мощные мышцы груди, крепкие руки, хорошая осанка и отличное
+     самочувствие – это далеко не полный перечень плюсов, которые вы получите от регулярного выполнения
+     этого упражнения. Польза отжиманий неоспорима, заниматься ими вы можете где и когда угодно."
+    </string>
+</resources>
